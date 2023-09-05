@@ -8,40 +8,72 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@mipmap/logo_ite_foreground"
+        android:layout_gravity="center"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Minha Primeira Tela de Login"/>
+        android:textColor="#296018"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:text="Faça seu login em nossa plataforma"
+        />
 
     <EditText
+        android:id="@+id/valor1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite o primeiro número"/>
+        android:hint="Digite o seu login"
+        android:layout_marginTop="15dp"/>
 
     <EditText
+        android:id="@+id/valor2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite o segundo número"/>
+        android:textColor="#296018"
+        android:hint="Digite a sua senha"
+        android:layout_marginBottom="15dp"/>
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#296018"
+            android:layout_gravity="left"
+            android:text="LOGAR"
+            app:cornerRadius="7dp"/>
+        <Button
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E93223"
+            android:layout_gravity="right"
+            app:cornerRadius="7dp"
+            android:text="LIMPAR"/>
+    </LinearLayout>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="103dp"
-            android:layout_height="wrap_content"
-            android:text="+"/>
-        <Button
-            android:layout_width="103dp"
-            android:layout_height="wrap_content"
-            android:text="-"/>
-        <Button
-            android:layout_width="103dp"
-            android:layout_height="wrap_content"
-            android:text="/"/>
-        <Button
-            android:layout_width="103dp"
-            android:layout_height="wrap_content"
-            android:text="X"/>
-    </LinearLayout>
+        android:textColor="#296018"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:text="Crie sua conta agora mesmo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRIAR CONTA"
+        android:layout_gravity="center"
+        app:cornerRadius="7dp"
+        android:backgroundTint="#296018"/>
+
 </LinearLayout>
